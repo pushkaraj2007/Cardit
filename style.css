@@ -80,8 +80,17 @@ main{
     background-color: #753a88;
     display: none;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     color: white;
+    position: relative;
+}
+
+.profile-info-div{
+    display: flex;
+    width: 100%;
+    align-self: center;
+    justify-content: space-between;
 }
 
 .profile-img{
@@ -115,4 +124,20 @@ main{
 
 .followers-div, .following-div{
     display: flex;
+}
+
+.profile-link-div{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 100px; */
+    position: absolute;
+    bottom: 10px;
+    align-items: center;
+}
+
+.profile-link-div img{
+    height: 30px;
+    margin-right: 5px;
 }

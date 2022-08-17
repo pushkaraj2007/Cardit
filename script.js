@@ -7,6 +7,7 @@ const followers = document.querySelector('.followers')
 const following = document.querySelector('.following')
 const publicRepos = document.querySelector('.public-repos')
 const userCardDiv = document.querySelector('.user-card-div')
+const profileLink = document.querySelector('.profile-link')
 
 createCardBtn.onclick = async ()=>{
     let request = await fetch(`https://api.github.com/users/${githubUsername.value}`)
@@ -18,6 +19,7 @@ createCardBtn.onclick = async ()=>{
     followers.innerText = res.followers
     following.innerText = res.following
     publicRepos.innerText = res.public_repos
+    profileLink.innerText = `github.com/${res.login}`
 }
 
 githubUsername.onkeydown = (e)=>{
