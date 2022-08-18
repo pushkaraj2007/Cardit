@@ -6,13 +6,13 @@ const username = document.querySelector('.username')
 const followers = document.querySelector('.followers')
 const following = document.querySelector('.following')
 const publicRepos = document.querySelector('.public-repos')
-const userCardDiv = document.querySelector('.user-card-div')
+const userCardOuterDiv = document.querySelector('.user-card-outerDiv')
 const profileLink = document.querySelector('.profile-link')
 
 createCardBtn.onclick = async ()=>{
     let request = await fetch(`https://api.github.com/users/${githubUsername.value}`)
     let res = await request.json();
-    userCardDiv.style.display = 'flex'
+    userCardOuterDiv.style.display = 'flex'
     avatar.src = res.avatar_url
     profileName.innerText = res.name
     username.innerText = res.login
@@ -26,4 +26,11 @@ githubUsername.onkeydown = (e)=>{
     if(e.keyCode == 13){
         createCardBtn.click()
     }
+}
+
+document.querySelector('.download-btn').onclick = ()=>{
+    domtoimage.toBlob(document.querySelector('.user-card-div'))
+        .then(function (blob) {
+            window.saveAs(blob, 'my-node.png');
+    });
 }

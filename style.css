@@ -68,17 +68,18 @@ main{
 }
 
 .user-card-outerDiv{
+    margin-top: 100px;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: none;
+    align-items: center;
+    flex-direction: column;
 }
 
 .user-card-div{
-    margin-top: 100px;
     height: 300px;
     width: 700px;
     background-color: #753a88;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -140,4 +141,20 @@ main{
 .profile-link-div img{
     height: 30px;
     margin-right: 5px;
+}
+
+.download-btn{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 168, 0, 0.993);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.download-btn:hover{
+    background-color: rgba(0, 139, 0, 0.993);
 }
