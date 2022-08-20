@@ -33,6 +33,12 @@ git clone https://github.com/<your-github-username>/Cardit
 cd Cardit
 ```
 
+## 💪🏽 Contributors
+
+Thank you so much all for spending your time to improve Cardit. Keep shining ⭐
+
+[![Contributors](https://contrib.rocks/image?repo=pushkaraj2007/cardit)](https://github.com/pushkaraj2007/cardit/graphs/contributors)
+
 ## 🙏🏽 Support
 
 This project needs a star️ from you. Don't forget to leave a star 🌟
