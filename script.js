@@ -10,7 +10,11 @@ const userCardOuterDiv = document.querySelector('.user-card-outerDiv')
 const profileLink = document.querySelector('.profile-link')
 
 createCardBtn.onclick = async ()=>{
-    let request = await fetch(`https://api.github.com/users/${githubUsername.value}`)
+    let username = githubUsername.value;
+    
+    if (username.length == 0) return;
+
+    let request = await fetch(`https://api.github.com/users/${username}`)
     let res = await request.json();
     userCardOuterDiv.style.display = 'flex'
     avatar.src = res.avatar_url
