@@ -102,6 +102,7 @@ main{
     position: relative;
     border-radius: 0.5em;
     box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
 }
 
 .profile-info-div{
