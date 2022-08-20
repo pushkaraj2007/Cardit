@@ -31,6 +31,6 @@ githubUsername.onkeydown = (e)=>{
 document.querySelector('.download-btn').onclick = ()=>{
     domtoimage.toBlob(document.querySelector('.user-card-div'))
         .then(function (blob) {
-            window.saveAs(blob, 'my-node.png');
+            window.saveAs(blob, `${username.innerText}.png`);
     });
 }
