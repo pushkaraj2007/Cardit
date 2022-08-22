@@ -1,8 +1,8 @@
 # Cardit
 
-Cardit is a web-app where you can create your own GitHub profile card.
+Cardit is a Web App where you can create your own GitHub profile card.
 
-## Languages/ Tool:
+## Languages/Tools
 
 - HTML
 - CSS
@@ -20,14 +20,14 @@ Before installation, please make sure you have already installed the following t
 
 ## 🛠️ Installation Steps
 
-- [Fork](https://github.com/pushkaraj2007/Cardit/fork) the project. Click on the <a href="https://github.com/pushkaraj2007/Cardit/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="15" width="15"></a> icon in the top right to get started
+- [Fork](https://github.com/pushkaraj2007/Cardit/fork) the project. Click on the <a href="https://github.com/pushkaraj2007/Cardit/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="15" width="15"></a> icon in the top right to get started.
 - Clone the project, you can use the following command:
 
 ```bash
 git clone https://github.com/<your-github-username>/Cardit
 ```
 
-- Navigate to the project directory
+- Navigate to the project directory:
 
 ```bash
 cd Cardit
