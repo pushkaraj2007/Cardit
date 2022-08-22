@@ -176,3 +176,100 @@ main{
 .download-btn:hover{
     background-color: rgba(0, 139, 0, 0.993);
 }
+
+
+
+/* MEDIA QUERY */
+
+/* Small Screen */
+@media (max-width: 575.98px) { 
+    nav h1{
+        font-size: large;
+        text-align: center;
+    }
+    .username-input-div{
+        display:block;
+        
+    }
+    
+    .username-input{
+        width: 300px;
+    }
+    .username-input-div button{
+        display: flex;
+        margin: 20px auto;
+        width: 50%;
+       justify-content: center;
+    }
+    .user-card-div{
+        width: 100%;
+        height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+   
+    }
+    .profile-info-div{
+        display: flex;
+        flex-direction:column;  
+        text-align: center;
+       
+       
+    }
+
+    .profile-info{
+      
+        text-align: center;
+        margin:auto;
+        
+      
+    }
+
+    .profile-link-div{
+        width: 100%;
+        position: relative;
+        margin-top: 2rem;
+    }
+
+    .download-btn{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        
+    }
+
+
+ }
+/* Medium screen */
+
+ @media (max-width: 991.98px) { 
+    .user-card-div{
+        width: 100%;
+        height: auto;
+        padding-top:2rem;
+        padding-bottom: 2rem;
+   
+    }
+    .profile-info-div{
+        display: flex;
+        flex-direction:column;  
+        text-align: center;
+        margin-bottom:2rem;
+       
+       
+    }
+
+    .profile-info{
+      
+        text-align: center;
+        margin:auto;
+        
+      
+    }
+
+    .profile-link-div{
+        width: 100%;
+        position: relative;
+        margin-top:1rem;
+    }
+    
+ }
