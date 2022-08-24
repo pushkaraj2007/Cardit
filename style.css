@@ -18,8 +18,17 @@ nav{
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    list-style-type: none;
+    text-decoration: none;
 }
-
+.change {
+    max-width: 70px;
+    max-height: 50px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 15px -1px rgba(202, 199, 199, 0.25);
+    border-radius: 4px;
+    opacity: 0.8;
+}
 nav h1{
     background: linear-gradient(141.27deg, #ff904e -4.24%, #ff5982 21.25%, #ec68f4 44.33%, #79e2ff 83.46%);
     background-size: 200%;
