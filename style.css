@@ -42,6 +42,7 @@ main{
     flex-direction: column;
 }
 
+
 .username-input-div{
     display: flex;
     align-items: center;
@@ -273,3 +274,44 @@ main{
     }
     
  }
+
+
+ /*NavBar*/
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+ .navbar-header {
+    background-color: #000000;
+    height: 50;
+    overflow:auto;
+
+ }
+
+ .navbar-header .brand{
+    float: left;
+    margin: 15px;
+ }
+
+ .navbar-header .logo-github{
+    float: right;
+    margin: 10px;
+ }
+ 
+ .brand a {
+
+     font-size: 1.2rem;
+     background: linear-gradient(141.27deg, #ff904e -4.24%, #ff5982 21.25%, #ec68f4 44.33%, #79e2ff 83.46%);
+     background-size: 200%;
+     -webkit-background-clip: text;
+     background-clip: text;
+     animation: gradient-heading 10s ease infinite;
+     -webkit-text-fill-color: transparent;
+ }
+
+.img-git{
+    height: 30px;
+}
+
