@@ -103,7 +103,7 @@ main{
     position: relative;
     border-radius: 0.5em;
     box-shadow: 2px 2px 4px rgb(0, 0, 0);
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    /* background: linear-gradient(to right, #4A00E0, #8E2DE2); */
 }
 
 .profile-info-div{
@@ -178,7 +178,36 @@ main{
     background-color: rgba(0, 139, 0, 0.993);
 }
 
+.select-custom-background {
+    display: none;
+    flex-direction: column;
+    margin: 3rem 0;
+    gap: 1rem;
+    align-items: center;
+    color: #fff;
+}
 
+.color-inputs-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#reset-background {
+    padding: .7rem 1.2rem;
+    background-color: rgba(0, 168, 0, 0.993);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s; 
+}
+
+#reset-background:hover {
+    background-color: rgba(0, 139, 0, 0.993);
+}
 
 /* MEDIA QUERY */
 
@@ -238,7 +267,9 @@ main{
         
     }
 
-
+    .color-inputs-form {
+        flex-direction: column;
+    }
  }
 /* Medium screen */
 
