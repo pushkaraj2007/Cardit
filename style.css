@@ -330,6 +330,11 @@ main{
     float: right;
     margin: 10px;
  }
+
+ .navbar-header .logo-twitter{
+    float: right;
+    margin: 10px;
+ }
  
  .brand a {
 
@@ -346,3 +351,6 @@ main{
     height: 30px;
 }
 
+.img-twitter{
+    height: 30px;
+}
