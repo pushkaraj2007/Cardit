@@ -194,6 +194,19 @@ main{
     gap: 2rem;
 }
 
+.spinner-div {
+  display: none;
+  align-content: center;
+  margin: 3rem;
+}
+
+.spinner-image
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #reset-background {
     padding: .7rem 1.2rem;
     background-color: rgba(0, 168, 0, 0.993);
