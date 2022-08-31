@@ -18,13 +18,25 @@ const fillPercent = document.querySelector("#fill-percentage");
 const resetBtn = document.querySelector("#reset-background");
 const selectCustomBackground = document.querySelector(".select-custom-background");
 
+// Spinner
+const spinnerDiv = document.querySelector(".spinner-div");
+
+
+function hide_spinner()
+{
+    
+}
+
 createCardBtn.onclick = async ()=>{
     let tempUsername = githubUsername.value;
     
     if (tempUsername.length == 0) return;
 
+    spinnerDiv.style.display = "flex";
     let request = await fetch(`https://api.github.com/users/${tempUsername}`)
     let res = await request.json();
+    spinnerDiv.style.display = "none";
+
     userCardOuterDiv.style.display = 'flex'
     avatar.src = res.avatar_url
     profileName.innerText = res.name
