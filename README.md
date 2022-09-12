@@ -2,6 +2,10 @@
 
 Cardit is a Web App where you can create your own GitHub profile card.
 
+Here's how your awesome card will look like ↓
+
+![Screenshot of your awesome GitHub Card](https://github.com/Coding-Hashira/Cardit/blob/addScreenshot/Images/Cardit.png)
+
 ## Languages/Tools
 
 
