@@ -53,6 +53,9 @@ $ git clone https://github.com/username/Cardit
 ```bash
 cd Cardit
 ```
+## 🛡️ License
+
+Cardit is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 💪🏽 Contributors
 
