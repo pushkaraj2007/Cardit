@@ -55,7 +55,7 @@ cd Cardit
 ```
 ## 🛡️ License
 
-Cardit is licensed under the MIT License - see the [LICENSE](License) file for details.
+Cardit is licensed under the MIT License - see the [LICENSE](Licence) file for details.
 
 ## 💪🏽 Contributors
 
