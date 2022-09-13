@@ -226,6 +226,10 @@ main{
 
 /* Small Screen */
 @media (max-width: 575.98px) { 
+    .spinner-image
+    {
+    width: 100%;
+    }
     nav h1{
         font-size: large;
         text-align: center;
