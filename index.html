@@ -1,92 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cardit</title>
-    <link rel="stylesheet" href="style.css">
-       
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    
+  <body>
     <div class="navbar-header">
-            <span class="brand"><a>Cardit</a></span>
-            <span class ="logo-github"> <a href = "https://github.com/pushkaraj2007/Cardit" target = "_self"> 
-                <img class="img-git"src = "https://th.bing.com/th/id/R.c03ac6ca05385832bd0a9b2c32925ab3?rik=EExeAm2aw4uy8Q&pid=ImgRaw&r=0" /> 
-             </a></span>
+      <span class="brand"><a>Cardit</a></span>
+      <span class="logo-github">
+        <a href="https://github.com/pushkaraj2007/Cardit" target="_self">
+          <img
+            class="img-git"
+            src="https://th.bing.com/th/id/R.c03ac6ca05385832bd0a9b2c32925ab3?rik=EExeAm2aw4uy8Q&pid=ImgRaw&r=0"
+          /> </a
+      ></span>
 
-             <span class ="logo-twitter"> <a href = "https://twitter.com/pushkaraj2007" target = "_self"> 
-                <img class="img-twitter"src = "https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" /> 
-             </a></span>
-          
+      <span class="logo-twitter">
+        <a href="https://twitter.com/pushkaraj2007" target="_self">
+          <img
+            class="img-twitter"
+            src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png"
+          /> </a
+      ></span>
     </div>
 
     <nav>
-        <h1>Cardit - Make your own GitHub card</h1>
+      <h1>Cardit - Make your own GitHub card</h1>
     </nav>
     <main>
-        <div class="github-username-div">
-            <div class="username-input-div">
-                <img src="/Images/github.png" alt="">
-                <input type="text" class="username-input" placeholder="GitHub Username ( Without '@' )">
-                <button class="create-card-btn">Create Card</button>
+      <div class="github-username-div">
+        <div class="username-input-div">
+          <img src="/Images/github.png" alt="" />
+          <input
+            type="text"
+            class="username-input"
+            placeholder="GitHub Username ( Without '@' )"
+          />
+          <button class="create-card-btn">Create Card</button>
+        </div>
+      </div>
+
+      <div class="spinner-div">
+        <img src="Images/loading-load.gif" class="spinner-image" />
+      </div>
+
+      <div class="user-card-outerDiv">
+        <div class="user-card-div">
+          <div class="profile-info-div">
+            <div class="profile-img">
+              <img class="avatar" alt="" />
             </div>
-        </div>
-
-        <div class = "spinner-div">
-            <img src = "Images/loading-load.gif" class = "spinner-image">
-        </div>
-
-        <div class="user-card-outerDiv">
-            <div class="user-card-div">
-                <div class="profile-info-div">
-                    <div class="profile-img">
-                        <img class="avatar" alt="">
-                    </div>
-                    <div class="profile-info">
-                        <div class="name-div profile"> <p>Name:&nbsp;</p> <p class="name"></p> </div>
-                        <div class="username-div profile"> <p>Username:&nbsp;</p> <p class="username"></p> </div>
-                        <div class="followers-and-following profile">
-                            <div class="followers-div"> <p>Followers: </p> <p class="followers"></p> </div>
-                            <div class="following-div"> <p>&nbsp;Following: </p> <p class="following"></p> </div>
-                        </div>
-                        <div class="public-repos-div profile"><p>Public Repos:&nbsp;</p> <p class="public-repos"></p></div>
-                    </div>
+            <div class="profile-info">
+              <div class="name-div profile">
+                <p>Name:&nbsp;</p>
+                <p class="name"></p>
+              </div>
+              <div class="username-div profile">
+                <p>Username:&nbsp;</p>
+                <p class="username"></p>
+              </div>
+              <div class="followers-and-following profile">
+                <div class="followers-div">
+                  <p>Followers:</p>
+                  <p class="followers"></p>
                 </div>
-                <div class="profile-link-div">
-                    <img src="/Images/github.png" alt="">
-                    <p class="profile-link"></p>
+                <div class="following-div">
+                  <p>&nbsp;Following:</p>
+                  <p class="following"></p>
                 </div>
-
+              </div>
+              <div class="public-repos-div profile">
+                <p>Public Repos:&nbsp;</p>
+                <p class="public-repos"></p>
+              </div>
             </div>
-            <button class="download-btn">Download PNG</button>
+          </div>
+          <div class="profile-link-div">
+            <img src="/Images/github.png" alt="" />
+            <p class="profile-link"></p>
+          </div>
         </div>
+        <button class="download-btn">Download PNG</button>
+      </div>
 
-        <div class="select-custom-background">
-            <label>Select Custom Background</label>
-            <form class="color-inputs-form">
-                <div class="color-1-selector">
-                    <label for="color-1">Color 1:</label>
-                    <input type="color" name="color-1" id="color-1" value="#4A00E0" class="color-input">
-                </div>
-                <div class="color-2-selector">
-                    <label for="color-2">Color 2:</label>
-                    <input type="color" name="color-2" id="color-2" value="#8E2DE2" class="color-input">
-                </div>
-                <input type="range" name="fill-percentage" id="fill-percentage" value="0" min="0" max="100" class="color-input">
-                <input type="reset" id="reset-background" value="Reset">
-            </form>
+      <div class="select-custom-background">
+        <label>Select Custom Background</label>
+        <form class="color-inputs-form">
+          <div class="color-1-selector">
+            <label for="color-1">Color 1:</label>
+            <input
+              type="color"
+              name="color-1"
+              id="color-1"
+              value="#4A00E0"
+              class="color-input"
+            />
+          </div>
+          <div class="color-2-selector">
+            <label for="color-2">Color 2:</label>
+            <input
+              type="color"
+              name="color-2"
+              id="color-2"
+              value="#8E2DE2"
+              class="color-input"
+            />
+          </div>
+          <input
+            type="range"
+            name="fill-percentage"
+            id="fill-percentage"
+            value="0"
+            min="0"
+            max="100"
+            class="color-input"
+          />
+          <input type="reset" id="reset-background" value="Reset" />
+        </form>
+      </div>
+      <div class="select-custom-img">
+        <label for="images-con">Or Select Custom Image</label>
+        <div class="images-con">
+          <div class="no-img img active-img" data-set="true">
+            <img src="images/no-img.png" alt="" class="camera-logo" />
+          </div>
+
+          <img
+            src="images/f-img.jpg"
+            alt=""
+            data-set="images/f-img.jpg"
+            class="img"
+          />
+          <img
+            src="images/s-img.jpg"
+            alt=""
+            data-set="images/s-img.jpg"
+            class="img"
+          />
+          <img
+            src="images/th-img.jpg"
+            alt=""
+            data-set="images/th-img.jpg"
+            class="img"
+          />
+          <img
+            src="images/fo-img.jpg"
+            alt=""
+            data-set="images/fo-img.jpg"
+            class="img"
+          />
+          <img
+            src="images/fi-img.jpg"
+            alt=""
+            data-set="images/fi-img.jpg"
+            class="img"
+          />
+          <img
+            src="images/si-img.jpg"
+            alt=""
+            data-set="images/si-img.jpg"
+            class="img"
+          />
+          <img
+            src="images/se-img.jpg"
+            alt=""
+            data-set="images/se-img.jpg"
+            class="img"
+          />
         </div>
+      </div>
     </main>
-
-
-
-
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="script.js "></script>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+    integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+    integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="script.js "></script>
 </html>
