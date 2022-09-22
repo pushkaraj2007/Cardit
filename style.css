@@ -354,6 +354,10 @@ main {
   .username-input-div button{
     margin-top: 15px;
   }
+
+  .username-input{
+    width: 330px;
+  }
 }
 
 @media (max-width: 991.98px) {
