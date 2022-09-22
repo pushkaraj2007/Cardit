@@ -54,6 +54,7 @@ main {
 .username-input-div img {
   position: absolute;
   height: 30px;
+  margin-top: 5px;
 }
 
 .username-input {
@@ -344,6 +345,16 @@ main {
 }
 
 /* Medium screen */
+
+@media (max-width: 600px) {
+  .username-input-div{
+    flex-direction: column;
+  }
+
+  .username-input-div button{
+    margin-top: 15px;
+  }
+}
 
 @media (max-width: 991.98px) {
   .user-card-div {
