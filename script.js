@@ -25,7 +25,7 @@ const images = document.querySelectorAll(".img");
 // Spinner
 const spinnerDiv = document.querySelector(".spinner-div");
 
-function hide_spinner() {}
+function hide_spinner() { }
 
 createCardBtn.onclick = async () => {
   let tempUsername = githubUsername.value;

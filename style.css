@@ -21,13 +21,11 @@ nav {
 }
 
 nav h1 {
-  background: linear-gradient(
-    141.27deg,
-    #ff904e -4.24%,
-    #ff5982 21.25%,
-    #ec68f4 44.33%,
-    #79e2ff 83.46%
-  );
+  background: linear-gradient(141.27deg,
+      #ff904e -4.24%,
+      #ff5982 21.25%,
+      #ec68f4 44.33%,
+      #79e2ff 83.46%);
   background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -216,10 +214,11 @@ main {
   display: none;
 }
 
-.select-custom-img > label {
+.select-custom-img>label {
   color: #fff;
   margin-bottom: 20px;
 }
+
 .images-con {
   width: 40%;
   height: 100%;
@@ -234,6 +233,7 @@ main {
   height: 60px;
   margin-bottom: 20px;
 }
+
 .no-img {
   background-color: black;
   display: flex;
@@ -241,21 +241,25 @@ main {
   align-items: center;
   padding: 10px;
 }
+
 .camera-logo {
   width: 40px;
   height: 40px;
   pointer-events: none;
 }
+
 .active-img {
   border: 2px solid white;
   transform: translateY(-10px);
   transition: all 0.5s ease;
 }
+
 .active-img-bg {
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
+
 .spinner-image {
   display: block;
   margin-left: auto;
@@ -284,10 +288,12 @@ main {
   .spinner-image {
     width: 100%;
   }
+
   nav h1 {
     font-size: large;
     text-align: center;
   }
+
   .username-input-div {
     display: block;
   }
@@ -295,18 +301,21 @@ main {
   .username-input {
     width: 300px;
   }
+
   .username-input-div button {
     display: flex;
     margin: 20px auto;
     width: 50%;
     justify-content: center;
   }
+
   .user-card-div {
     width: 100%;
     height: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
   .profile-info-div {
     display: flex;
     flex-direction: column;
@@ -333,6 +342,7 @@ main {
     flex-direction: column;
   }
 }
+
 /* Medium screen */
 
 @media (max-width: 991.98px) {
@@ -342,6 +352,7 @@ main {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
   .profile-info-div {
     display: flex;
     flex-direction: column;
@@ -391,13 +402,11 @@ main {
 
 .brand a {
   font-size: 1.2rem;
-  background: linear-gradient(
-    141.27deg,
-    #ff904e -4.24%,
-    #ff5982 21.25%,
-    #ec68f4 44.33%,
-    #79e2ff 83.46%
-  );
+  background: linear-gradient(141.27deg,
+      #ff904e -4.24%,
+      #ff5982 21.25%,
+      #ec68f4 44.33%,
+      #79e2ff 83.46%);
   background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
